@@ -1,0 +1,128 @@
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+}
+
+body{
+    background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: left -80% top 180%, right -80% bottom 210%;
+    background-color: hsl(185, 75%, 39%);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 130px 0px;
+}
+
+.wrapper{
+    background-color: white;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px 20px 20px 20px;
+
+}
+
+.wrapper .image{
+    display: block;
+	left: 50%;
+	top: 270px;
+	transform: translate(-50%, -50%);
+	position: absolute;
+    border: 6px white solid;
+    border-radius: 50%;
+}
+
+.box{
+    width: 100%;
+    height: 35%;
+}
+
+.wrapper .box img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.details{
+    padding-top: 50px;
+    width: 100%;
+    height: 65%;
+    line-height: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.details .info{
+    line-height: 1.8rem;
+}
+
+.details .info h3, .details .ref h2{
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 700;
+    color: hsl(229, 23%, 23%);
+}
+
+.details .info h3 span, .details .info p, .details .ref p{
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 400;
+    color: hsl(227, 10%, 46%);
+}
+
+span, .details .ref p{
+    letter-spacing: 0.01rem;
+}
+
+.ref{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Mobile Design */
+
+@media(max-width: 375px){
+    body{
+        background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+        background-repeat: no-repeat, no-repeat;
+        background-position: left 120% top 115%, right 120% bottom 155%;
+        background-color: hsl(185, 75%, 39%);
+        width: 10%;
+        height: 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 170px 0px 0px 170px;
+    }
+
+    .wrapper{
+        background-color: white;
+        width: 300px;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 20px 20px 20px 20px;
+    
+    }
+
+    .wrapper .image{
+        display: block;
+        left: 50%;
+        top: 275px;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        border: 6px white solid;
+        border-radius: 50%;
+    }
+}
