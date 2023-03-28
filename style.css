@@ -90,7 +90,7 @@ span, .details .ref p{
 
 /* Mobile Design */
 
-@media(max-width: 375px){
+@media(max-width: 400px){
     body{
         background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
         background-repeat: no-repeat, no-repeat;
