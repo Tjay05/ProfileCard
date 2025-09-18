@@ -53,6 +53,7 @@ img {
 
 /* Mobile Styles */
 body {
+	position: relative;
 	background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
 	background-repeat: no-repeat, no-repeat;
 	background-size: 99%, 99%;
@@ -128,6 +129,22 @@ main.main .wrapper .details {
 	letter-spacing: 2px;
 	font-size: .8rem;
 	color: var(--dark-grey);
+}
+
+/* Footer styles */
+.attribution { 
+	font-size: 13px; 
+	text-align: center; 
+	position: absolute;
+	bottom: 1rem;
+	font-family: inherit;
+	left: 0;
+	width: 100%;
+	margin-inline: auto;
+}
+    
+.attribution a { 
+	color: hsl(228, 45%, 44%); 
 }
 
 /* Desktop Styles */
