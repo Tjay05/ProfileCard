@@ -47,11 +47,19 @@ img {
 
 /* Utility Styles */
 .container {
-  width: min(85%, 1200px);
+  width: min(85%, 401px);
   margin-inline: auto;
 }
 
 /* Mobile Styles */
+body {
+	background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+	background-repeat: no-repeat, no-repeat;
+	background-size: 99%, 99%;
+	background-position-x: -4300%, 5500%;
+	background-position-y: -70%, 130%;
+}
+
 /* Main styles */
 main.main .wrapper {
 	border-radius: 15px;
@@ -107,7 +115,7 @@ main.main .wrapper .details {
 	display: flex;
 	align-items: center;
 	justify-content: space-evenly;
-	margin-block: 1rem;
+	margin-block: 1.5rem;
 }
 
 .details .wrapper-footer p.numbers {
@@ -120,4 +128,13 @@ main.main .wrapper .details {
 	letter-spacing: 2px;
 	font-size: .8rem;
 	color: var(--dark-grey);
+}
+
+/* Desktop Styles */
+@media(min-width: 768px) {
+	body {
+		background-size: 80%, 80%;
+		background-position-x: -140%, 220%;
+		background-position-y: 270%, -220%;
+	}
 }
